@@ -1,0 +1,98 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  position: sticky;
+  top: 0;
+  font-weight: bold;
+  background: white;
+  padding: 1rem 4rem;
+}
+
+h3 {
+  margin: 0 0 1rem;
+}
+
+p {
+  white-space: pre-line;
+  margin: 0.5rem 0 1rem;
+}
+
+br {
+  display: block;
+  margin: -.4rem 0;
+  content: "";
+}
+
+.types {
+  position: relative;
+  padding: 0;
+  /* background: #AAA; */
+  margin: 2rem 0;
+
+}
+
+.types ul {
+  list-style: none;
+  margin: 0 4rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.msg {
+  background: black;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.msg p {
+  margin: 0;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: black;
+  color: white;
+  width: 480px;
+  min-height: 240px;
+  padding: 2rem;
+}
+
+.talk-msgs .card p {
+  margin: 0;
+}
+
+.talk-msgs .card p:not(:last-of-type)::after {
+  display: block;
+  content: "";
+  margin: 2rem 0;
+  border-bottom: 4px double white;
+}
+
+.item-id {
+  display: none;
+}
+
+body.show-item-ids .item-id {
+  display: inline-block;
+}
+
+.toggle-btn {
+  font-family: inherit;
+  margin-left: 1rem;
+  border: 0;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  padding: .25rem .5rem;
+  cursor: pointer;
+}
